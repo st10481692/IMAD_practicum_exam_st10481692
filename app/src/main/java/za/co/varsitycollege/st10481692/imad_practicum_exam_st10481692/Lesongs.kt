@@ -1,5 +1,6 @@
 package za.co.varsitycollege.st10481692.imad_practicum_exam_st10481692
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -22,18 +23,44 @@ class Lesongs : AppCompatActivity() {
         val add = findViewById<Button>(R.id.add)
         val songs = findViewById<TextView>(R.id.songs)
         val songname = findViewById<EditText>(R.id.songname)
-        val artistname = findViewById<EditText>(R.id.artistname)
+        val artistname = findViewById<EditText>(R.id.arstistname)
         val rating = findViewById<EditText>(R.id.rating)
         val comments = findViewById<EditText>(R.id.comments)
+        val nxtbtn = findViewById<Button>(R.id.nxtbtn)
+        val extbtn = findViewById<Button>(R.id.extbtn)
 
         add.setOnClickListener(){
-            val = songs.text.toString()
+            val songname = songs.text.toString()
+            val artistname = artistname.text.toString()
+            val rating = rating.text.toString()
+            val comments = comments.text.toString()
 
-            val add = when (songs) {
-                "Can I" -> "Rap Playlist"
-                else "invalid prompt"
+            val add = when (songname) {
+                "No Friends In The Industry" -> "Rap Playlist"
+                "Burning Blue" -> "Memories Playlist"
+                "Dont Miss" -> "Best Love Playlist"
+                "TGIF" -> "Dance song Playlist"
+                else -> "Invalid Prompt"
+            }
+            val add = when (artistname) {
+                "Drake" -> "Rap Playlist"
+                "Mariah the scietist" -> "Memories playlist"
+                "King Von" -> "Best LOve Song"
+                "TGIF" -> "Dance song playlist"
+                else -> "Invalid Prompt"
+
+
+
 
             }
+            nxtbtn.setOnClickListener {
+                val intent = Intent(this, detailed::class.java)
+                startActivity(intent)}
+
+            extbtn.setOnClickListener {
+                finishAffinity() }
+
+
 
 
         }

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2196F3"
     android:orientation="vertical"
     tools:context=".Lesongs">
 
@@ -25,41 +26,42 @@
         android:layout_gravity="center|bottom"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="200dp"
-        android:background="96F3FF21"
+        android:background=""
         android:text="Add To Playlist"
         android:textColor="@android:color/black" />
 
-    <EditText
+    <TextView
         android:id="@+id/songname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Type Song"
-        android:textSize="20sp" />
+        android:text="Song"
+        android:textSize="16sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/arstistname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Type Artist"
-        android:textSize="20sp" />
+        android:text="Artist"
+        android:textSize="16sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Rating"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/comments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Comments"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
+
     <Button
         android:id="@+id/nxtbtn"
         android:layout_width="match_parent"
@@ -70,6 +72,15 @@
         android:background="96F3FF21"
         android:text="next page"
         android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/usertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="Enter Text Here"
+        android:textSize="24sp" />
+
     <Button
         android:id="@+id/extbtn"
         android:layout_width="match_parent"

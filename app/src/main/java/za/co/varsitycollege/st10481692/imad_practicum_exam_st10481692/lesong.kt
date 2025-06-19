@@ -1,5 +1,6 @@
 package za.co.varsitycollege.st10481692.imad_practicum_exam_st10481692
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class lesong : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,31 +24,37 @@ class lesong : AppCompatActivity() {
         }
         val add = findViewById<Button>(R.id.add)
         val songs = findViewById<TextView>(R.id.songs)
-        val songname = findViewById<EditText>(R.id.songname)
-        val artistname = findViewById<EditText>(R.id.arstistname)
-        val rating = findViewById<EditText>(R.id.rating)
-        val comments = findViewById<EditText>(R.id.comments)
+        val songname = findViewById<TextView>(R.id.songname)
+        val artistname = findViewById<TextView>(R.id.arstistname)
+        val rating = findViewById<TextView>(R.id.rating)
+        val comments = findViewById<TextView>(R.id.comments)
         val nxtbtn = findViewById<Button>(R.id.nxtbtn)
         val extbtn = findViewById<Button>(R.id.extbtn)
+        val usertxt = findViewById<EditText>(R.id.usertxt)
 
         add.setOnClickListener(){
-            val songname = songs.text.toString()
-            val artistname = artistname.text.toString()
-            val rating = rating.text.toString()
-            val comments = comments.text.toString()
+           val usertxt = usertxt.text.toString()
 
-            val add = when (songname) (artistname) (rating) (comments){
+            val add = when (usertxt){
                 "No Friends In The Industry" -> "Rap Playlist"
                 "Burning Blue" -> "Memories Playlist"
                 "Dont Miss" -> "Best Love Playlist"
-                "TGIF" -> "Dance song Playlist"
-
-
+                "TGIF" ->"Dance song Playlist"
                 "Drake" -> "Rap Playlist"
-                "Mariah the scietist" -> "Memories playlist"
-                "King Von" -> "Best LOve Song"
-                "TGIF" -> "Dance song playlist"
-                else -> "Invalid Prompt"
+                "Mariah the scientist" -> "Memories Playlist"
+                "King Von" -> "Best Love Playlist"
+                "Glorilla" ->"Dance song Playlist"
+                "5" -> "Rap Playlist"
+                "4" -> "Memories Playlist"
+                "3" -> "Best Love Playlist"
+                "2" ->"Dance song Playlist"
+
+
+
+                else -> "Invalid Promt"
+            }
+
+
             }
             nxtbtn.setOnClickListener {
                 val intent = Intent(this, detailed::class.java)
@@ -62,6 +70,4 @@ class lesong : AppCompatActivity() {
 
 
     }
-}
-    }
-}
+
