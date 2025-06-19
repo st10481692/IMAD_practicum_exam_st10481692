@@ -20,6 +20,13 @@ class detailed : AppCompatActivity() {
         val display = findViewById<Button>(R.id.display)
         display.setOnClickListener(){
             "No Friends In The Industry Rap Playlist Drake 5"
+            "N 2 Deep Rap Playlist Drake 5"
+            "Burning Blue Memories Playlist Mariah the scientist 4"
+            "Revenge Memories Playlist Mariah the scientist 4"
+            "Dont Miss Best Love Playlist King Von 3"
+
+
+
 
         }
     }

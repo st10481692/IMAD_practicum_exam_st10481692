@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2196F3"
+    android:background="#FFEB3B"
     tools:context=".detailed">
 
     <Button
@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="200dp"
-        android:background=""
+        android:background="#FFEB3B"
         android:text="Display"
         android:textColor="@android:color/black" />
 

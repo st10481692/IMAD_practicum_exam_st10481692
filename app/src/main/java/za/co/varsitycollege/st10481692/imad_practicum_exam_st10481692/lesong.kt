@@ -37,9 +37,13 @@ class lesong : AppCompatActivity() {
 
             val add = when (usertxt){
                 "No Friends In The Industry" -> "Rap Playlist"
+                "N 2 Deep" -> "Rap Playlist"
                 "Burning Blue" -> "Memories Playlist"
+                "Revenge" -> "Memories Playlist"
                 "Dont Miss" -> "Best Love Playlist"
+                "Waynes story" -> "Best love Playlist"
                 "TGIF" ->"Dance song Playlist"
+                "Typa" -> "Dance song Playlist"
                 "Drake" -> "Rap Playlist"
                 "Mariah the scientist" -> "Memories Playlist"
                 "King Von" -> "Best Love Playlist"
@@ -49,9 +53,7 @@ class lesong : AppCompatActivity() {
                 "3" -> "Best Love Playlist"
                 "2" ->"Dance song Playlist"
 
-
-
-                else -> "Invalid Promt"
+                else -> "Invalid Prompt"
             }
 
 
