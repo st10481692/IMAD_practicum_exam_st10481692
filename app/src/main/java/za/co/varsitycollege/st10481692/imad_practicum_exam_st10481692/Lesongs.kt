@@ -20,13 +20,21 @@ class Lesongs : AppCompatActivity() {
             insets
         }
         val add = findViewById<Button>(R.id.add)
-        val Songs = findViewById<TextView>(R.id.Songs)
+        val songs = findViewById<TextView>(R.id.songs)
         val songname = findViewById<EditText>(R.id.songname)
         val artistname = findViewById<EditText>(R.id.artistname)
         val rating = findViewById<EditText>(R.id.rating)
         val comments = findViewById<EditText>(R.id.comments)
 
         add.setOnClickListener(){
+            val = songs.text.toString()
+
+            val add = when (songs) {
+                "Can I" -> "Rap Playlist"
+                else "invalid prompt"
+
+            }
+
 
         }
 
