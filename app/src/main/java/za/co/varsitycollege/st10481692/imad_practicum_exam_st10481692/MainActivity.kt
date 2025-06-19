@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val exitButton = findViewById<Button>(R.id.exitButton)
 
         goButton.setOnClickListener {
-            val intent = Intent(this, Lesongs::class.java)
+            val intent = Intent(this, lesong::class.java)
             startActivity(intent)
         }
         exitButton.setOnClickListener {
