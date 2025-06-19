@@ -7,4 +7,5 @@ this is the button which will display the songs when clicked
 this is the average rating part of the app 
 
 ![image](https://github.com/user-attachments/assets/3c211543-31db-428f-ab1f-70e384f1ae06)
+this is on my maun screen when the user is aske to enter the details for the play list 
 ![image](https://github.com/user-attachments/assets/a83bec60-b300-412f-944a-5c83913159f9)
