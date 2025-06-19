@@ -1,6 +1,7 @@
 package za.co.varsitycollege.st10481692.imad_practicum_exam_st10481692
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +16,11 @@ class detailed : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val display = findViewById<Button>(R.id.display)
+        display.setOnClickListener(){
+            "No Friends In The Industry Rap Playlist Drake 5"
+
         }
     }
 }
