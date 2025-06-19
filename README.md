@@ -67,6 +67,9 @@ this part of my code is rhe welcome screen which has buttons to either start the
 this is the button which will display the songs when clicked
 ![image](https://github.com/user-attachments/assets/d20132a2-6d7d-4b33-ac58-ebab5c18a76d)
 this is the average rating part of the app 
+![image](https://github.com/user-attachments/assets/008df100-d991-4996-bf9e-9fa083188128)
+emulator picture
+
 
 ![image](https://github.com/user-attachments/assets/3c211543-31db-428f-ab1f-70e384f1ae06)
 this is on my maun screen when the user is aske to enter the details for the play list 
